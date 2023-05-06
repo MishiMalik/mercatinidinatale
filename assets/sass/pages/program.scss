@@ -1,0 +1,170 @@
+.program-card{
+     background-color: #f1f1f1 !important;
+     padding: 15px;
+     margin: 10px 0px;
+     img{
+        width: 170px !important;
+        height: auto;
+        object-fit: cover;
+        background-color: red;
+     }
+     .program-card-text{
+        padding-left: 15px;
+        @media only screen and (max-width:767px){
+            padding-left: 0px;
+        }
+     }
+     div{
+        @media only screen and (max-width:767px){
+            flex-direction: column;
+            align-items: center;
+        }
+     }
+}
+.box{
+    background-color: #dae9ee;
+    padding: 15px;
+    .social-icon2{
+        display: flex;
+        justify-content: center;
+        a{
+            font-size: 50px;
+        }
+    }
+}
+.no-decoration{
+    text-decoration: none;
+}
+.text a{
+text-decoration: none;    
+}
+
+
+.img {
+    float: left;
+    margin: 5px;
+    padding-right: 5px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    
+    @media only screen and (max-width:500px){
+        float: none;
+        margin: 5px auto;
+    }
+  }
+.imgr {
+    float: right;
+    margin: 5px;
+    padding-left: 5px;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+   
+    @media only screen and (max-width:500px){
+        float: none;
+        margin: 10px auto !important;
+    }
+  }
+
+//   .wrap-p {
+//     text-align: justify;
+//     font-size: 25px;
+//   }
+.dish-card{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.068);
+    background-color: #e0e0e0;
+    line-height: 50px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.655);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0) 100%);
+}
+
+.news-card2{
+    background-color: #f1f1f1 !important;
+    padding: 15px;
+    margin: 10px 0px;
+    border: none !important;
+    img{
+       width: 50px !important;
+       height: auto;
+       object-fit: cover;
+       background-color: red;
+    }
+    .news-text{
+       padding-left: 15px;
+       @media only screen and (max-width:767px){
+           padding-left: 0px;
+       }
+    }
+    div{
+       @media only screen and (max-width:767px){
+           flex-direction: column;
+           align-items: center;
+       }
+    }
+}
+.offers{
+    background-color: beige;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+// ==============================================table
+.offers-table table thead tr th{
+    
+    background: none repeat scroll 0 0 #68B3DE !important;
+    border-color: rgba(0, 0, 0, 0.4) !important;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.7) inset;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 7px 10px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.hover-display-text{
+    position: relative;
+   
+    .hover-display{
+        position: absolute;
+        background-color: #000000d0;
+        color: white;
+        font-size: 14px;
+        color: white;
+        width: 200px;
+        left: calc(50% - 100px);
+        bottom: 95%;
+        display: none;
+        padding: 10px;
+        &::after{
+            content: " ";
+            width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid #000000d0;
+                position: absolute;
+                bottom: -10px;
+                left: calc(50% - 10px);
+        }
+    }
+    &:hover{
+        .hover-display{
+            display: block;
+        }
+        
+    }
+}

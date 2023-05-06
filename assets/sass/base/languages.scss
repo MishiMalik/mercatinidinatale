@@ -1,0 +1,134 @@
+#google_translate_element2 {
+    display: none !important;
+}
+
+.skiptranslate {
+    display: none !important;
+}
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
+    display: none !important;
+}
+
+a.gflag {
+    vertical-align: middle;
+    font-size: 15px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    // background-image: url(//gtranslate.net/flags/16.png);
+}
+
+a.gflag img {
+    border: 0;
+}
+
+a.gflag:hover {
+    // background-image: url(//gtranslate.net/flags/16a.png);
+}
+
+#goog-gt-tt {
+    display: none !important;
+}
+
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+.goog-te-menu-value:hover {
+    text-decoration: none !important;
+}
+
+
+
+body {
+    top: 0 !important;
+}
+
+a.gflag {
+    display: flex !important;
+    outline: 1px solid white;
+}
+.black-white {
+    // -webkit-filter: grayscale(60%);
+    // /* Safari 6.0 - 9.0 */
+    // filter: grayscale(100%) !important;
+    outline: 3px solid white !important;
+}
+
+.English-us {
+    background-image: url('../images/flags/206626.png') !important;
+    background-size: cover;
+    height: 20px !important;
+    width: 30px !important;
+    z-index: 1000;
+}
+
+.german-lang {
+    background-image: url('../images/flags/images.png') !important;
+    background-size: cover !important;
+    height: 20px !important;
+    width: 30px !important;
+}
+
+.italian-lang {
+    background-image: url('../images/flags/italy-flag-png-xl.png') !important;
+    background-size: cover !important;
+    height: 20px !important;
+    width: 30px !important;
+}
+
+.spanish-lang {
+    background-image: url('../images/flags/ES-Spain-Flag-icon.png') !important;
+    background-size: cover !important;
+    height: 20px !important;
+    width: 30px !important;
+}
+
+.portuguese-lang {
+    background-image: url('../images/flags/PT-Portugal-Flag-icon.png') !important;
+    background-size: cover !important;
+    height: 20px !important;
+    width: 30px !important;
+}
+
+.russian-lang {
+    background-image: url('../images/flags/french-flag-icon-the-flag-of-france-free-vector.webp') !important;
+    background-size: cover !important;
+    height: 20px !important;
+    width: 30px !important;
+}
+
+.french-lang {
+    background-image: url('../images/flags/555451.png') !important;
+    background-size: cover !important;
+    height: 20px !important;
+    width: 30px !important;
+    
+}
+
+
+
+// ===========================================langusges 
+.languages-row{
+    background-color: $primary;
+    padding: 7px 0px;
+    .social-icon {
+        display: flex;
+        align-items: center;
+        margin-top: 4px !important;
+    a
+    {
+        padding: 0px !important;
+        i{
+            
+            font-size: 20px;
+            line-height: 10px;
+            color: rgb(242, 243, 247);
+            margin-right: 10px;
+            &:hover{
+                color: white;
+            }
+        }
+    } 
+    }
+}

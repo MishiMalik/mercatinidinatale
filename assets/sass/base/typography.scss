@@ -1,0 +1,376 @@
+$primary: #d8444b;
+$orange: #ef5b2f;
+$red: #e60a2e;
+$brown: #940909;
+$purple: #994495;
+$green: #3fbd00;
+$yellow:#ffc800 !important;
+
+
+
+
+// ==================================================font sizes
+.f-12 {
+    font-size: 12px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.f-16 {
+    font-size: 16px;
+}
+
+.f-18 {
+    font-size: 18px;
+}
+
+.f-20 {
+    font-size: 20px;
+}
+
+.f-22 {
+    font-size: 22px;
+}
+
+.f-24 {
+    font-size: 24px;
+}
+
+.f-26 {
+    font-size: 26px;
+}
+
+.f-28 {
+    font-size: 28px;
+}
+
+.f-30 {
+    font-size: 30px;
+}
+
+.f-32 {
+    font-size: 32px;
+}
+
+.f-34 {
+    font-size: 34px;
+}
+
+.f-36 {
+    font-size: 36px;
+}
+
+.f-38 {
+    font-size: 38px;
+}
+
+.f-40 {
+    font-size: 40px;
+}
+
+.f-42 {
+    font-size: 42px;
+}
+
+.f-44 {
+    font-size: 44px;
+}
+
+.f-46 {
+    font-size: 46px;
+}
+
+
+
+// ===========================font weights
+.w-300 {
+    font-weight: 300;
+}
+
+.w-400 {
+    font-weight: 400;
+}
+
+.w-500 {
+    font-weight: 500;
+}
+
+.w-600 {
+    font-weight: 600;
+}
+
+.w-700 {
+    font-weight: 700;
+}
+
+.w-800 {
+    font-weight: 800;
+}
+
+
+// ======================================font colors
+.text-primary {
+    color: $primary !important;
+}
+// .text-yellow {
+//     color: $yellow !important;
+// }
+.text-red {
+    color: $red !important;
+}
+.text-yellow{
+    color: $yellow;
+}
+.text-green {
+    color: $green !important;
+}
+
+.text-orange {
+    color: $orange !important;
+}
+
+.text-brown {
+    color: $brown !important;
+}
+
+// =============================================font family
+.font-oxygen {
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+// ===================================headings
+.main-heading {
+    font-size: 26px;
+    color: $primary;
+    font-weight: 500;
+    position: relative;
+    display: block;
+
+    // padding-left: 30px;
+    @media only screen and (max-width:600px) {
+        padding-left: 30px !important;
+        font-size: 22px;
+
+    }
+
+    &::before {
+        content: ' ';
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: $primary;
+        position: relative;
+        left: -30px;
+        top: 25px;
+
+        @media only screen and (max-width:600px) {
+            left: -20;
+        }
+    }
+
+}
+
+.heading-secondry {
+    font-size: 18px;
+    // color: $primary;
+    font-weight: 600;
+    position: relative;
+    display: block;
+    padding-left: 25px;
+    margin-bottom: 15px !important;
+
+    &::before {
+        content: ' ';
+        display: block;
+        width: 15px;
+        height: 15px;
+        // background-color: $primary;
+        position: relative;
+        left: -25px;
+        top: 18px;
+        @media only screen and (max-width:500px){
+           top: 18px;
+        }
+    }
+}
+
+.heading-brown {
+    color: $brown;
+
+    &::before {
+        background-color: $brown;
+
+    }
+}
+.heading-yellow {
+    color: $yellow;
+
+    &::before {
+        background-color: $yellow;
+
+    }
+}
+
+.heading-red {
+    color: $red;
+
+    &::before {
+        background-color: $red;
+
+    }
+}
+
+.heading-purple {
+    color: $purple;
+
+    &::before {
+        background-color: $purple;
+
+    }
+}
+
+.heading-primary {
+    color: $primary;
+
+    &::before {
+        background-color: $primary;
+
+    }
+}
+
+.heading-orange {
+    color: $orange;
+
+    &::before {
+        background-color: $orange;
+
+    }
+}
+.heading-green {
+    color: $green;
+
+    &::before {
+        background-color: $green;
+
+    }
+}
+.text {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.allipsis-multiple-4 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    // Addition lines for 2 line or multiline ellipsis
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.allipsis-multiple-6 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    // Addition lines for 2 line or multiline ellipsis
+    display: -webkit-box !important;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.allipsis-multiple-7 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    // Addition lines for 2 line or multiline ellipsis
+    display: -webkit-box !important;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+// ==========================order
+.order-1 {
+    order: 1;
+
+    @media only screen and (max-width:767px) {
+        order: 1 !important;
+    }
+}
+
+.order-2 {
+    order: 2;
+
+    @media only screen and (max-width:767px) {
+        order: 3 !important;
+    }
+}
+
+.order-3 {
+    order: 3;
+
+    @media only screen and (max-width:767px) {
+        order: 2 !important;
+    }
+}
+
+
+// ======================================ellipsis
+.ellipsis-1{
+          text-overflow:ellipsis;
+  overflow:hidden;
+  // Addition lines for 2 line or multiline ellipsis
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  max-width: 98% !important;
+}
+
+.ellipsis-2{
+    text-overflow:ellipsis;
+overflow:hidden;
+// Addition lines for 2 line or multiline ellipsis
+display: -webkit-box !important;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+white-space: normal;
+max-width: 97% !important;
+}
+
+
+.share-icons{
+    position: fixed;
+    top: 50vh;
+    left: 0;
+    .share-icons-icon{
+        height: 50px;
+        width: 50px;
+        font-size: 24px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+}
+.btn-close-modal{
+    background-color: white;
+}
+.bg-twitter{
+    background-color: #2FBAF7;
+}
+.bg-fb{
+    background-color: #4162A7;
+}
+.bg-email{
+    background-color: #A2A4A7;
+}
