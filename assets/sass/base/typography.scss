@@ -1,10 +1,12 @@
-$primary: #d8444b;
+$primary: #e60a2e;
 $orange: #ef5b2f;
 $red: #e60a2e;
 $brown: #940909;
 $purple: #994495;
-$green: #3fbd00;
-$yellow:#ffc800 !important;
+$green: #4caf50;
+$yellow:#ff9800 !important;
+$primary-dark:#d8444b;
+$primary-light:#ff8b8f;
 
 
 
@@ -82,8 +84,23 @@ $yellow:#ffc800 !important;
     font-size: 46px;
 }
 
-
-
+.f-80{
+    font-size: 80px;
+}
+@media only screen and (max-width:768px){
+    .f-30{
+        font-size: 24px;
+    }
+.f-36{
+    font-size: 30px;
+}
+.f-80{
+    font-size: 60px;
+}
+}
+a{
+    color: inherit !important;
+}
 // ===========================font weights
 .w-300 {
     font-weight: 300;

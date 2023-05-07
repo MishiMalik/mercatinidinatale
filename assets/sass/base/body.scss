@@ -20,12 +20,12 @@ body{
     }
    
 }
-.logo-row{
-    @media only screen and (min-width:1600px){
-        max-width: 1500px;
-        margin: 0px auto;
-        }
-}
+// .logo-row{
+//     @media only screen and (min-width:1600px){
+//         max-width: 1500px;
+//         margin: 0px auto;
+//         }
+// }
 
 // ===================================================navbar
 .top-header{
@@ -35,7 +35,9 @@ body{
     @media only screen and (max-width:991px) {
         padding: 15px 0px 15px 0px;
       }
-
+     .container-fluid{
+        max-width: 1500px;
+     }
 }
 .header-search{
     width: 300px;
@@ -88,6 +90,10 @@ body{
     border-top: 1px solid #e5767f;
     box-shadow: 0 1px 3px #5a0c12, 0 2px 4px #d95358 inset, -1px 1px 3px #a8292d inset;
     height: 36px;
+    .container-fluid{
+        max-width: 1500px;
+        margin: 0px auto;
+     }
     @media only screen and (max-width:991px){
        height: fit-content;
        margin: 0px;
@@ -119,7 +125,7 @@ body{
 }
 .navbar{
     margin: 0px 10px;
-    background-color: $primary;
+    background-color: $primary-dark;
     padding: 5px 0px !important;
     border-left: 1px solid #e5767f;
     border-radius: 3px 3px 0 0;
@@ -127,6 +133,9 @@ body{
     // box-shadow: 0 1px 3px #5a0c12, 0 2px 4px #d95358 inset, -1px 1px 3px #a8292d inset;
     height: 36px;
     margin-top: -20px;
+    .container-fluid{
+        max-width: 1500px;
+     }
     @media only screen and (max-width:1200px) {
       height:fit-content;
       }
@@ -240,6 +249,7 @@ body{
       }
       @media only screen and (max-width:991px) {
        border-radius: 0px;
+       margin-left: 0px;
        }
 }
 

@@ -3,6 +3,113 @@
     width: 100%;
     object-fit: contain;
 }
+.top-banner{
+    background-image: url('/assets/images/top-banner-home.jpg');
+    height: 400px;
+    background-position: center;
+    object-fit: cover;
+    margin: 14px 0px;
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media only screen and (max-width:500px){
+        height: 400px;
+    }
+}
+.banner-home-2{
+    background-image: url('/assets/images/romantische-strasse-mercatini-di-natale.jpg');
+    height: 320px;
+    background-position: center;
+    object-fit: cover;
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media only screen and (max-width:1200px){
+        height: 400px;
+    }
+    @media only screen and (max-width:767px){
+        height: 400px;
+    }
+}
+.yellow-banner{
+    background-color: $yellow;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.banner-price{
+        padding: 10px 20px ;
+        border-radius: 4px;
+        position: relative;
+        text-align: center;
+        background: #4caf50;
+        color: #fff;
+        margin: 10px auto;
+}
+
+.blob {
+    animation: pulse-black 2s infinite; }
+
+  @keyframes pulse-black {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 $primary; }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px $primary; }
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 $primary; } }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // ======================program crds
@@ -101,10 +208,10 @@ padding: 5px 7px;
 text-decoration: none;
 border-radius: 3px;
 text-align: center;
-font-weight: 600;
-&:hover{
-    color:white !important;
-}
+font-weight: 500;
+// &:hover{
+//     color:white !important;
+// }
 }
 .brown-btn{
     font-size: 16px;
@@ -154,6 +261,55 @@ text-align: center;
         color: white !important;
     }
 }
+.green-btn-big{
+    font-size: 22px;
+    color: white;
+    background-color: $green;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 400;
+    transition: all .5s ease-in;
+    &:hover{
+        color: white !important;
+        transform: scale(1.1);
+       
+    }
+    @media only screen and (max-width:768px){
+        font-size: 18px;
+    }
+}
+.white-btn-big{
+    font-size: 20px;
+    color: $yellow;
+    background-color:white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: 400;
+    transition: all .5s ease-in;
+    &:hover{
+        transform: scale(1.1);
+       
+    }
+    @media only screen and (max-width:768px){
+        font-size: 18px;
+    }
+}
+.yellow-btn{
+    font-size: 16px;
+    color: white;
+    background-color: $yellow;
+    padding: 5px 7px;
+    text-decoration: none;
+    border-radius: 3px;
+    text-align: center;
+    // &:hover{
+    //     color: white !important;
+    // }
+}
 .border-right{
     border-right: 1px solid rgb(185, 182, 182);
     @media only screen and (max-width:991px){
@@ -187,8 +343,12 @@ text-align: center;
 .border-orange-top{
     border-top: 3px solid $orange;
 }
-
-
+.text-primary-light{
+    color: $primary-light;
+}
+.text-dark-light{
+    color: rgb(66, 66, 66);
+}
 
 
 // -==============================================carousel
@@ -430,7 +590,24 @@ cursor: pointer;
 text-decoration: none;
 }
 .trip-card{
-    min-height: 430px;
+    min-height: 230px;
+    background:linear-gradient(to right,rgba(89,1,0,1) 0%,rgba(161,12,16,1) 35%,rgba(161,12,16,1) 50%,rgba(161,12,16,1) 65%,rgba(89,1,0,1) 100%);
+display: flex;
+justify-content:space-between;
+flex-direction: column;
+align-items: center;
+padding: 1px 15px 25px 15px;
+}
+.trips-price{
+    color: $yellow;
+    font-size: 50px;
+    font-weight: 600;
+}
+.trip-dec{
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
 }
 .design-list{
     background-color: #f7f7f7;
