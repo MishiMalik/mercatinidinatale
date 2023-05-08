@@ -1686,3 +1686,55 @@ a.gflag {
       left: calc(50% - 10px); }
   .hover-display-text:hover .hover-display {
     display: block; }
+
+.elenco-viaggi {
+  width: 100%; }
+  .elenco-viaggi thead {
+    background-color: #ff9800 !important; }
+    .elenco-viaggi thead tr th {
+      padding: 10px 0px !important;
+      background: linear-gradient(to right, #590100 0%, #a10c10 35%, #a10c10 50%, #a10c10 65%, #590100 100%);
+      color: white;
+      border: 1px solid white !important;
+      text-align: center !important; }
+    .elenco-viaggi thead tr .elenco-viaggi-name {
+      width: 40%; }
+    .elenco-viaggi thead tr .elenco-viaggi-details {
+      width: 20%; }
+    .elenco-viaggi thead tr .elenco-viaggi-price {
+      width: 20%; }
+    .elenco-viaggi thead tr .elenco-viaggi-btn {
+      width: 20%; }
+  .elenco-viaggi tbody tr td {
+    padding: 7px 0px !important;
+    border: 1px solid #ddd !important;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff9800 !important;
+    text-align: center; }
+    .elenco-viaggi tbody tr td a {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.5) !important; }
+      .elenco-viaggi tbody tr td a:hover {
+        color: #ff8b8f !important; }
+  .elenco-viaggi tbody tr .pack_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .elenco-viaggi tbody tr .pack_button a {
+      background-color: #4caf50;
+      color: white !important;
+      padding: 5px 5px;
+      border-radius: 3px;
+      width: 150px; }
+      .elenco-viaggi tbody tr .pack_button a:hover {
+        color: white !important; }
+    .elenco-viaggi tbody tr .pack_button .prev_but {
+      background-color: #ff9800 !important;
+      margin-top: 5px; }
+
+.modal-dialog-iframe {
+  max-width: 90%;
+  min-height: 500px; }

@@ -1,0 +1,74 @@
+.elenco-viaggi{
+    width: 100%;
+    
+    thead{
+        background-color: $yellow;
+        
+       tr{
+        th{
+            padding: 10px 0px !important;
+            background:linear-gradient(to right,rgba(89,1,0,1) 0%,rgba(161,12,16,1) 35%,rgba(161,12,16,1) 50%,rgba(161,12,16,1) 65%,rgba(89,1,0,1) 100%);
+           color: white;
+           border: 1px solid white !important;
+           text-align: center !important;
+        }
+        .elenco-viaggi-name{
+            width: 40%;
+        }
+        .elenco-viaggi-details{
+            width: 20%;
+        }
+        .elenco-viaggi-price{
+            width: 20%;
+        }
+        .elenco-viaggi-btn{
+            width: 20%;
+        }
+       }
+    }
+    tbody{
+        tr{
+           td{
+            padding: 7px 0px !important;
+           border: 1px solid #ddd !important;
+            font-size: 20px;
+            font-weight: 600;
+            color: $yellow ;
+            text-align: center;
+           a{
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.5) !important;
+            &:hover{
+                color: $primary-light !important;
+            }
+           }
+           }
+           .pack_button{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                background-color: $green;
+                color: white !important;
+               padding: 5px 5px;
+               border-radius: 3px;
+               width: 150px;
+               &:hover{
+                color: white !important;
+               }
+            }
+           .prev_but{
+                background-color: $yellow ;
+                margin-top: 5px;
+            }
+           }
+        }
+    }
+}
+.modal-dialog-iframe{
+    max-width: 90%;
+    min-height: 500px;
+    
+    }

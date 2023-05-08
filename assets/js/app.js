@@ -1,3 +1,7 @@
+// In your Javascript (external .js resource or <script> tag)
+$(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
 // =====================================sidebar on mobile
 $('.menu-icon').on('click',function(){
     $('.navbar-row').css('left','0');
