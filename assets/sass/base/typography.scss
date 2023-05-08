@@ -293,7 +293,15 @@ a{
     -webkit-box-orient: vertical;
     white-space: normal;
 }
-
+.allipsis-multiple-5 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    // Addition lines for 2 line or multiline ellipsis
+    display: -webkit-box !important;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
 .allipsis-multiple-6 {
     text-overflow: ellipsis;
     overflow: hidden;
