@@ -58,14 +58,46 @@ $('.owl-carousel-news').owlCarousel({
             loop:true
         },
         600:{
-            items:1.4,
-            nav:false,
+            items:2.1,
+            nav:true,
             loop:true
         },
         1200:{
             items:3,
             nav:true,
-            loop:false,
+            loop:true,
+            loop:true
+        },
+        
+    }
+});
+$('.owl-carousel-trips').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    autoplay:false,
+    autoplayTimeout:1500,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1.3,
+            nav:true,
+            loop:true
+        },
+        600:{
+            items:2.4,
+            nav:true,
+            loop:true
+        },
+        767:{
+            items:3.4,
+            nav:true,
+            loop:true
+        },
+        1200:{
+            items:4,
+            nav:true,
+            loop:true,
             loop:true
         },
         

@@ -214,6 +214,14 @@ a {
   -webkit-box-orient: vertical;
   white-space: normal; }
 
+.allipsis-multiple-2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal; }
+
 .order-1 {
   order: 1; }
   @media only screen and (max-width: 767px) {
@@ -847,6 +855,36 @@ a.gflag {
   color: #fff;
   margin: 10px auto; }
 
+.owl-nav {
+  position: absolute;
+  top: 40%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 100%; }
+
+.owl-prev span,
+.owl-next span {
+  font-size: 30px;
+  height: 30px !important;
+  width: 30px !important;
+  background-color: #ff9800 !important;
+  border-radius: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 10px;
+  padding-bottom: 2px;
+  color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; }
+
+.owl-prev {
+  margin-left: -10px; }
+
+.owl-next {
+  margin-right: -10px; }
+
 .blob {
   animation: pulse-black 2s infinite; }
 
@@ -860,6 +898,55 @@ a.gflag {
   100% {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 #e60a2e; } }
+
+.trips_data {
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; }
+  .trips_data .head-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    position: relative; }
+  .trips_data img {
+    width: 100%;
+    height: 100%; }
+  .trips_data .trips-head {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%; }
+    .trips_data .trips-head h3 {
+      font-size: 20px;
+      color: white;
+      font-weight: 500;
+      text-align: center;
+      padding: 15px !important; }
+    .trips_data .trips-head .cd-price {
+      color: white;
+      font-size: 22px;
+      font-weight: 500;
+      background-color: #e60a2e;
+      margin-bottom: 10px;
+      padding: 3px 10px 3px 5px;
+      border-radius: 0px 10px 10px 0px; }
+  .trips_data .section-btn {
+    background-color: #e60a2e;
+    padding: 15px;
+    min-height: 84px; }
+    .trips_data .section-btn div {
+      background-color: white !important;
+      padding: 3px 5px;
+      border-radius: 3px; }
+      .trips_data .section-btn div a {
+        background-color: white;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 8px !important; }
 
 .content-card {
   border: 3px solid #a8a3a3;
@@ -1063,10 +1150,10 @@ a.gflag {
   border-top: 3px solid #ef5b2f; }
 
 .text-primary-light {
-  color: #ff8b8f; }
+  color: #ff8b8f !important; }
 
 .text-dark-light {
-  color: #424242; }
+  color: #424242 !important; }
 
 .carousel-image-div {
   position: relative;
@@ -1110,10 +1197,6 @@ a.gflag {
   border: 2px solid #e60a2e;
   padding: 0px !important; }
 
-.owl-next,
-.owl-prev {
-  display: none !important; }
-
 .accordion-header .accordion-button {
   text-align: center !important;
   font-family: 'Open Sans', sans-serif !important;
@@ -1122,13 +1205,7 @@ a.gflag {
   font-weight: bold !important;
   color: #fff !important;
   text-shadow: 1px 1px 1px #000, 0 0 1px rgba(0, 0, 0, 0.603) !important;
-  background-color: #ffc600 !important;
-  background-image: -moz-linear-gradient(top, #ffc600 0%, #cfa100 100%) !important;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffc600), color-stop(100%, #cfa100)) !important;
-  background-image: -webkit-linear-gradient(top, #ffc600 0%, #cfa100 100%) !important;
-  background-image: -o-linear-gradient(top, #ffc600 0%, #cfa100 100%) !important;
-  background-image: -ms-linear-gradient(top, #ffc600 0%, #cfa100 100%) !important;
-  background-image: linear-gradient(to bottom, #ffc600 0%, #cfa100 100%) !important;
+  background: linear-gradient(to right, #590100 0%, #a10c10 35%, #a10c10 50%, #a10c10 65%, #590100 100%);
   text-align: center;
   display: flex;
   justify-content: center !important; }
@@ -1140,27 +1217,26 @@ a.gflag {
   display: none; }
 
 .accordion-body {
-  background-color: #f7da81 !important; }
+  background: linear-gradient(#680000 0%, #8c0205 56%, #af0303 100%); }
   .accordion-body h1 {
     font-size: 20px;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.5); }
+    font-weight: 500;
+    color: white;
+    text-align: center; }
   .accordion-body label {
     font-size: 14px;
-    font-weight: 600;
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.5); }
+    font-weight: 500;
+    color: white; }
   .accordion-body h2 {
     background: none repeat scroll 0 0 transparent;
     border-bottom: medium none !important;
-    color: rgba(0, 0, 0, 0.4);
+    color: white;
     font-family: Open Sans;
     font-size: 17px;
     font-style: italic;
     list-style: none outside none;
     margin: 10px 0 0;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center; }
 
 .accordion-header2 .accordion-button2 {
@@ -1174,9 +1250,9 @@ a.gflag {
   background-color: #e60a2e !important;
   background-image: none !important;
   background-image: none !important;
-  background-image: none  !important;
   background-image: none !important;
-  background-image: none  !important;
+  background-image: none !important;
+  background-image: none !important;
   background-image: none !important;
   display: flex;
   justify-content: space-between !important; }
@@ -1192,17 +1268,17 @@ a.gflag {
   .accordion-body2 h1 {
     font-size: 20px;
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.5);
+    color: white;
     text-align: center;
     text-shadow: 1px 1px rgba(255, 255, 255, 0.9); }
   .accordion-body2 label {
     font-size: 14px;
     font-weight: 600;
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.5); }
+    color: white; }
   .accordion-body2 h2 {
     background: none repeat scroll 0 0 transparent;
     border-bottom: medium none !important;
-    color: rgba(0, 0, 0, 0.4);
+    color: white;
     font-family: Open Sans;
     font-size: 17px;
     font-style: italic;
@@ -1220,7 +1296,7 @@ a.gflag {
   list-style: none;
   background-color: #dae9ee;
   border-radius: 10px;
-  padding: 0px  5px !important; }
+  padding: 0px 5px !important; }
   .vote-list li {
     border-bottom: 1px solid #adabab;
     padding: 10px 10px; }
@@ -1357,7 +1433,7 @@ a.gflag {
       margin: 0;
       padding: 0;
       border-radius: 3px;
-      left: calc( 50% - 50px); }
+      left: calc(50% - 50px); }
 
 .rik-img {
   margin-right: 14px;
