@@ -53,7 +53,7 @@ $('.owl-carousel-news').owlCarousel({
     margin:10,
     responsiveClass:true,
     autoplay:true,
-    autoplayTimeout:1500,
+    autoplayTimeout:2000,
     autoplayHoverPause:true,
     responsive:{
         0:{
@@ -68,6 +68,34 @@ $('.owl-carousel-news').owlCarousel({
         },
         1200:{
             items:3,
+            nav:true,
+            loop:true,
+            loop:true
+        },
+        
+    }
+});
+
+$('.owl-carousel-pack').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1.1,
+            nav:true,
+            loop:true
+        },
+        600:{
+            items:3.1,
+            nav:true,
+            loop:true
+        },
+        1200:{
+            items:4,
             nav:true,
             loop:true,
             loop:true

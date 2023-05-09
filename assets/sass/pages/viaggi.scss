@@ -1,3 +1,4 @@
+// =========================================================Trips table
 .elenco-table{
     overflow-x: scroll;
 }
@@ -79,7 +80,7 @@
 
 
 
-
+// ===========================================================marketplace cards
     .blog-exc-item {
         background-color: #FFEFEF;
         border: 1px solid rgba(0,0,0,0.4);
@@ -260,4 +261,193 @@
     }
     .text_part strong{
         color: $primary-light;
+    }
+
+
+// /========================================blockqute
+
+    blockquote {
+        background: none repeat scroll 0 0 #FEC8C9;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        clear: both;
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+    code {
+        color:#444;
+        font:11px/17px tahoma, arial, sans-serif;
+        display:block;
+    }
+    blockquote p {
+        margin: 5px 0px;
+    }
+
+
+    // ========================================================viaddi page
+    .price_pack_container {
+        background-color: #70CC61;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        color: #FFFFFF;
+        float: right;
+        margin-left: 10px;
+        padding: 10px 20px 0;
+        text-align: center;
+        margin-bottom:10px;
+        display: flex;
+        flex-direction: column;
+
+        @media only screen and (max-width:767px){
+            float: none;
+            margin-left: 0px;
+        }
+    }
+    .price_pack_container span.prezzo{
+        font:600 70px/60px 'Open Sans Condensed';
+        text-shadow:1px 1px 3px rgba(0,0,0,0.3);
+    }
+    .price_pack_container .small_text{
+        font:300 15px/15px 'Open Sans Condensed';
+        text-align: center;
+        display: block;
+    }
+
+
+    // ===viaggi list
+    .viaggi-list{
+        .p_title{
+background-color: $yellow;
+color: white;
+padding: 4px 10px;
+border-radius: 4px
+        }
+        ul{
+            padding: 0px 0px 0px 15px;
+            li{
+                border-bottom: 1px solid #cccc;
+                padding: 5px 2px;
+                font-size: 14px;
+                i{
+                    color: $green;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .date-div{
+        background-color:#ccc;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+
+    .button_pren {
+        text-decoration: none;
+        background: #70CC61 !important;
+        border: 1px solid rgba(0, 0, 0, 0.1) !important;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1) !important;
+        color: #FFFFFF !important;
+        padding:7px 0 7px 0px !important;
+        font-weight: 600 !important;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        display: block;
+        font-family: 'Open Sans Condensed';
+        font-size: 20px;
+        margin: 5px auto;
+        padding: 10px 0;
+        text-align: center;
+        color:rgba(0,0,0,0.6);
+        @media only screen and (max-width:767px){
+            font-size: 16px;
+            padding: 7px 10px;
+        }
+    }
+
+
+
+    .dep_pack ul{
+        margin:0!important;
+        padding:0 !important;
+    }
+    .dep_pack li {
+        background-color: rgba(0, 0, 0, 0.02);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        display: block;
+        float: left;
+        font-size: 23px !important;
+        margin-bottom: 5px;
+        margin-right: 1%;
+        position: relative;
+        text-align: left;
+        width: 48%;
+
+        @media only screen and (max-width:991px){
+            width: 100%;
+        }
+    }
+    .dep_pack .city_name {
+        box-shadow: 0 1px rgba(255, 255, 255, 0.3) inset;
+        color: #FFFFFF;
+        display: block;
+        float: left;
+        font: 600 20px 'Open Sans Condensed' !important;
+        margin-right: 20px;
+        padding: 5px 5px 5px 35px;
+        text-align: left;
+        width: 50%;
+        text-shadow:1px 1px 3px rgba(0,0,0,0.2);
+        @media only screen and (max-width:991px){
+            padding: 5px 5px 5px 15px;
+            width: 65%;
+        }
+    }
+    .dep_pack .price_city {
+        display: block;
+        float: left;
+        // padding: 11px 0;
+        color:#1C600B;
+    }
+    .dep_pack li:hover{
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+    .dep_pack .city_name {
+        position: relative;
+        background:url(/images/icon/icon-cart.png) 5px center no-repeat #75CE63;
+        
+        border: 1px solid #5BAF48;
+    }
+    .dep_pack .city_name:after, .dep_pack .city_name:before {
+        left: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    
+    .dep_pack .city_name:after {
+        border-color: rgba(255, 133, 133, 0);
+        border-left-color: #75CE63;
+        border-width: 15px;
+        top: 50%;
+        margin-top: -15px;
+    }
+    .dep_pack .city_name:before {
+        border-color: rgba(224, 76, 76, 0);
+        border-left-color: #5BAF48;
+        border-width: 16px;
+        top: 50%;
+        margin-top: -16px;
+    }
+    .dep_pack .mini_text{
+        font: 300 17px/17px 'Open Sans Condensed';
+    }
+    .program_pack h4 {
+        color: #D44447;
+        font-size: 20px !important;
+        margin-left: 30px;
+        margin-top: 10px;
+        text-align: center;
     }
