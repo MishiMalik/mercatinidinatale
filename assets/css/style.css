@@ -2134,3 +2134,33 @@ blockquote p {
   margin-left: 30px;
   margin-top: 10px;
   text-align: center; }
+
+.scheda_container .pack_price {
+  background: #FFEEC1;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 40px;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px; }
+  .scheda_container .pack_price i {
+    color: #4caf50; }
+
+.date-text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4e4e4e; }
+
+.date-text strong {
+  color: #ff8b8f; }
+
+.detail-text p {
+  font-size: 14px;
+  text-align: justify; }
+  .detail-text p strong {
+    color: #ff8b8f;
+    font-size: 16px; }
+
+.parigi-img {
+  background-image: url("/assets/images/Parigi-a-Natale-450x308.jpg") !important; }
