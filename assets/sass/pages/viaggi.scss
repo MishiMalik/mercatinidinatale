@@ -4,7 +4,7 @@
 }
 .elenco-viaggi{
     width: 100%;
-    min-width: 500px;
+    min-width: 700px;
     
     thead{
         background-color: $yellow;
@@ -21,10 +21,10 @@
             width: 40%;
         }
         .elenco-viaggi-details{
-            width: 20%;
+            width: 25%;
         }
         .elenco-viaggi-price{
-            width: 20%;
+            width: 15%;
         }
         .elenco-viaggi-btn{
             width: 20%;
@@ -34,9 +34,9 @@
     tbody{
         tr{
            td{
-            padding: 7px 0px !important;
+            padding: 7px 7px !important;
            border: 1px solid #ddd !important;
-            font-size: 20px;
+            font-size: 30px;
             font-weight: 600;
             color: $yellow ;
             text-align: center;
@@ -59,7 +59,8 @@
                 color: white !important;
                padding: 5px 5px;
                border-radius: 3px;
-               width: 150px;
+               min-width: 150px;
+               width: 90%;
                &:hover{
                 color: white !important;
                }
