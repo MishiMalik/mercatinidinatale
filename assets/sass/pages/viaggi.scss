@@ -500,3 +500,30 @@ border-radius: 4px
         background-image: url('/assets/images/Parigi-a-Natale-450x308.jpg') !important;
         
     }
+    .banner-viagii{
+        height: 320px;
+        background-position: center;
+        object-fit: cover;
+        padding: 15px;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        .banner{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+        @media only screen and (max-width:1200px) {
+            height: 400px;
+        }
+    
+        @media only screen and (max-width:767px) {
+            height: 400px;
+        }
+    }
