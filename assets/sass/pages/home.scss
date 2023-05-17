@@ -144,6 +144,9 @@
 .blob {
     animation: pulse-black 2s infinite;
 }
+.blob-green {
+    animation: pulse-black-2 2s infinite;
+}
 
 @keyframes pulse-black {
     0% {
@@ -159,6 +162,23 @@
     100% {
         transform: scale(0.95);
         box-shadow: 0 0 0 0 $primary;
+    }
+}
+
+@keyframes pulse-black-2 {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 #70CC61 ;
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px #70CC61 ;
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 #70CC61 ;
     }
 }
 

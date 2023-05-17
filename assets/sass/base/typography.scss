@@ -331,30 +331,30 @@ a{
     -webkit-box-orient: vertical;
     white-space: normal;
 }
-// ==========================order
-.order-1 {
-    order: 1;
+// // ==========================order
+// .order-1 {
+//     order: 1;
 
-    @media only screen and (max-width:767px) {
-        order: 1 !important;
-    }
-}
+//     @media only screen and (max-width:767px) {
+//         order: 1 !important;
+//     }
+// }
 
-.order-2 {
-    order: 2;
+// .order-2 {
+//     order: 2;
 
-    @media only screen and (max-width:767px) {
-        order: 3 !important;
-    }
-}
+//     @media only screen and (max-width:767px) {
+//         order: 3 !important;
+//     }
+// }
 
-.order-3 {
-    order: 3;
+// .order-3 {
+//     order: 3;
 
-    @media only screen and (max-width:767px) {
-        order: 2 !important;
-    }
-}
+//     @media only screen and (max-width:767px) {
+//         order: 2 !important;
+//     }
+// }
 
 
 // ======================================ellipsis
@@ -407,4 +407,7 @@ max-width: 97% !important;
 }
 .bg-email{
     background-color: #A2A4A7;
+}
+.hover-color:hover{
+    color: $primary-light !important;
 }
