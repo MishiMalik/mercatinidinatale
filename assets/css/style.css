@@ -2237,13 +2237,14 @@ blockquote p {
   position: relative; }
 
 #sidebar .viag_price {
-  display: block;
-  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
   padding: 10px 0;
   text-align: center;
   font-size: 25px;
   font-family: 'Open Sans Condensed';
-  float: left;
   margin-right: 10px;
   background-color: rgba(0, 0, 0, 0.1);
   line-height: 25px;
@@ -2252,9 +2253,10 @@ blockquote p {
 #sidebar .viag_name {
   font-family: 'Open Sans Condensed';
   font-size: 20px;
-  line-height: 45px;
-  text-align: center;
-  color: white; }
+  text-align: start;
+  color: white;
+  display: flex;
+  align-items: center; }
 
 #sidebar .viag_tooltip {
   background: none repeat scroll 0 0 #ff9800 !important;
@@ -2279,13 +2281,13 @@ blockquote p {
   border-color: rgba(215, 131, 132, 0) rgba(215, 131, 132, 0) rgba(215, 131, 132, 0) #ff9800 !important;
   border-width: 10px;
   margin-top: -10px;
-  top: 50%; }
+  top: 68%; }
 
 #sidebar .viag_tooltip:before {
   border-color: rgba(184, 112, 113, 0) rgba(184, 112, 113, 0) rgba(184, 112, 113, 0) #ff9800 !important;
   border-width: 11px;
   margin-top: -11px;
-  top: 50%; }
+  top: 68%; }
 
 #sidebar .viagg_elem:hover {
   background-color: #ff9800 !important; }
