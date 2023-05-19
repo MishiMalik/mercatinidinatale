@@ -119,7 +119,12 @@ body{
     font-variant: normal;
     text-transform: capitalize;
     text-shadow: 1px 1px 0 #ffe5e6;
+
+    @media only screen and (max-width:991px){
+        background-color: white;
+    }
 }
+
 .countries ul li:last-child a{
     border-right: 0px solid #ddd !important;
 }
@@ -250,7 +255,11 @@ body{
       @media only screen and (max-width:991px) {
        border-radius: 0px;
        margin-left: 0px;
+       display: block;
+       max-height: 100%;
+       margin-bottom: 20px;
        }
+
 }
 
 .child li {
