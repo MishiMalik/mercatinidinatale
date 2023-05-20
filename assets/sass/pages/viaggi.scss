@@ -63,11 +63,16 @@
                width: 90%;
                &:hover{
                 color: white !important;
+                background-color: #5feb64;
                }
             }
            .prev_but{
                 background-color: $yellow ;
                 margin-top: 5px;
+                &:hover{
+                    
+                    background-color:hsl(49, 94%, 55%) !important;
+                }
             }
            }
         }
@@ -354,7 +359,7 @@ border-radius: 4px
         border: 1px solid rgba(0, 0, 0, 0.1) !important;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1) !important;
         color: #FFFFFF !important;
-        padding:7px 0 7px 0px !important;
+        padding:13px 0 13px 0px !important;
         font-weight: 600 !important;
         border: 1px solid rgba(255, 255, 255, 0.4);
         display: block;
@@ -364,12 +369,38 @@ border-radius: 4px
         padding: 10px 0;
         text-align: center;
         color:rgba(0,0,0,0.6);
+        position: relative;
         @media only screen and (max-width:767px){
             font-size: 16px;
             padding: 7px 10px;
         }
+        &:hover{
+            background-color:  #62cf51 !important;
+        }
+        &::after{
+            content: "";
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        border: 8px solid #62cf51;
+        position: absolute;
+        z-index: -1 ;
+        top: 32%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: ring 1.5s infinite;
+        }
     }
-
+.prev_but_viag{
+    background: $yellow;
+    background-color:$yellow ;
+    &:hover{
+        background-color: #ff9900ce !important;
+    }
+    &::after{
+        display: none !important;
+    }
+}
 
 
     .dep_pack ul{
