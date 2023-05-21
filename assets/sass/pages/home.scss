@@ -890,6 +890,7 @@
     z-index: 1;
     cursor: pointer;
     text-decoration: none;
+    border-radius: 6px;
 }
 
 .trip-card {
@@ -1141,5 +1142,60 @@
 
     &:hover {
         background-color: rgba(0, 128, 0, 1);
+    }
+}
+
+.form-control{
+background-color: #f5efef;
+font-weight: 500;
+color: #000;
+&:focus{
+    outline: none;
+    box-shadow: none;
+    background-color: #aaa9a9;
+}
+}
+.form-label{
+    font-size: 14px;
+    font-weight: 500;
+    color:$brown;
+}
+.select2-container--default .select2-selection--single{
+    background-color: #f5efef;
+font-weight: 500;
+height: 35px;
+&:focus{
+    outline: none;
+    box-shadow: none;
+    background-color: #aaa9a9;
+}
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #000 !important;
+   font-size: 14px;
+   margin-top: 3px;
+   margin-left: 7px;
+   font-weight: 500;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+
+    border-color: #000 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 60%;
+    width: 0;
+
+}
+.side-card{
+    padding:15px 20px ;
+    border-radius: 3px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    &:hover{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 }

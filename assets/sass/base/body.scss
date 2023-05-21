@@ -8,13 +8,17 @@ body{
     box-sizing: border-box;
 }
 .container-fluid{
-    width: 95%;
+    width: 95% ;
 @media only screen and (max-width:1340px) {
     width:100% ;
 }
    
 }
 .container{
+   
+    @media only screen and (min-width:1360px){
+        max-width: 91%;
+        }
     @media only screen and (min-width:1600px){
     max-width: 1500px;
     }
@@ -29,9 +33,10 @@ body{
 
 // ===================================================navbar
 .top-header{
-    background:linear-gradient(to right,rgba(89,1,0,1) 0%,rgba(161,12,16,1) 35%,rgba(161,12,16,1) 50%,rgba(161,12,16,1) 65%,rgba(89,1,0,1) 100%);
+    // background:linear-gradient(to right,rgba(89,1,0,1) 0%,rgba(161,12,16,1) 35%,rgba(161,12,16,1) 50%,rgba(161,12,16,1) 65%,rgba(89,1,0,1) 100%);
+   background-color: white;
     padding: 10px 0px 30px 0px;
-
+  border-top: 3px solid $primary;
     @media only screen and (max-width:991px) {
         padding: 15px 0px 15px 0px;
       }
@@ -45,7 +50,7 @@ body{
     border: 1px solid #6f2222;;
     outline: none;
     padding: 5px 10px;
-    color: white;
+    color: $primary;
     font-size: 14px;
     font-weight: 400;
     box-shadow: 1px 1px 0 #bf5555;
@@ -55,9 +60,9 @@ body{
       }
 }
 .header-search::placeholder{
-    color: rgba(255, 255, 255, 0.719);
+    color: $primary;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .header-search:focus{
    outline: none;
@@ -82,11 +87,11 @@ body{
     align-items: center;
 }
 .countries{
-    margin: 0px 10px;
+    // margin: 0px 10px;
     background-color: #fbe3e4;
     padding: 5px 0px !important;
     border-left: 1px solid #e5767f;
-    border-radius: 0px 0px 3px 3px;
+    // border-radius: 0px 0px 3px 3px;
     border-top: 1px solid #e5767f;
     box-shadow: 0 1px 3px #5a0c12, 0 2px 4px #d95358 inset, -1px 1px 3px #a8292d inset;
     height: 36px;
@@ -98,6 +103,7 @@ body{
        height: fit-content;
        margin: 0px;
     }
+  
   
 }
 .countries  .d-flex{
@@ -129,11 +135,11 @@ body{
     border-right: 0px solid #ddd !important;
 }
 .navbar{
-    margin: 0px 10px;
+    // margin: 0px 10px;
     background-color: $primary-dark;
     padding: 5px 0px !important;
     border-left: 1px solid #e5767f;
-    border-radius: 3px 3px 0 0;
+    // border-radius: 3px 3px 0 0;
     border-top: 1px solid #e5767f;
     // box-shadow: 0 1px 3px #5a0c12, 0 2px 4px #d95358 inset, -1px 1px 3px #a8292d inset;
     height: 36px;
@@ -162,8 +168,8 @@ body{
     // overflow: hidden;
     // text-overflow: ellipsis;
     &:hover{
-        background-color: rgba(255, 255, 255, 0.801);
-    color: $primary !important;
+        border-radius:0px !important;
+    border-bottom: 2px solid white
     }
     @media only screen and (max-width:991px) {
        margin: 10px 0px;
@@ -171,16 +177,17 @@ body{
       }
 }
 .active-link{
-    background-color: rgba(255, 255, 255, 0.801);
-    color: $primary !important;
-    padding: 7px 7px !important;
+    // background-color: rgba(255, 255, 255, 0.801);
+    // color: $primary !important;
+    border-radius:0px !important;
+    border-bottom: 2px solid white
 }
 .menu-icon{
     display: none;
     i{
         font-size: 25px;
         border: 1px solid #ccc;
-        color: white;
+        color: black;
         height: 30px;
         width: 30px;
         border-radius: 3px;
@@ -309,9 +316,9 @@ ul ul ul {
     margin-left: 6px;
 }
 .navbar-row{
-    
+    z-index: 100;
     @media only screen and (max-width:991px) {
-        position: absolute;
+        position: absolute !important;
         left: -300px;
         top: 0px;
         height: 100vh;
