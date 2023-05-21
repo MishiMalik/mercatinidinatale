@@ -167,6 +167,7 @@ body{
     display: flex !important;
     // overflow: hidden;
     // text-overflow: ellipsis;
+    border-bottom: 2px solid transparent;
     &:hover{
         border-radius:0px !important;
     border-bottom: 2px solid white

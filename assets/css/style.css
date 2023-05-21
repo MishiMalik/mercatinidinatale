@@ -417,7 +417,8 @@ body {
   border-radius: 3px;
   margin: 0px 6px;
   white-space: nowrap;
-  display: flex !important; }
+  display: flex !important;
+  border-bottom: 2px solid transparent; }
   .nav-link:hover {
     border-radius: 0px !important;
     border-bottom: 2px solid white; }
