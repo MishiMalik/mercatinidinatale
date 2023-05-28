@@ -2395,14 +2395,15 @@ blockquote p {
   font-weight: 500; }
 
 #sidebar .viag_tooltip {
-  background: none repeat scroll 0 0 #ff9800 !important;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.89);
   border: 1px solid #ff9800 !important;
-  color: rgba(0, 0, 0, 0.7);
+  color: white;
   display: none;
+  font-weight: 400;
   left: -263px;
   position: absolute;
   width: 250px;
-  z-index: 5; }
+  z-index: 100; }
 
 #sidebar .viag_tooltip:after,
 #sidebar .viag_tooltip:before {
@@ -2454,7 +2455,8 @@ blockquote p {
   border: 1px solid rgba(255, 255, 255, 0.2);
   font-size: 14px;
   margin-bottom: 5px;
-  color: #FFF; }
+  color: #FFF;
+  font-weight: 400; }
 
 #sidebar .viag_tooltip .tool_incluso {
   padding: 10px;
@@ -2465,7 +2467,7 @@ blockquote p {
   padding-left: 20px;
   margin-bottom: 5px;
   font-size: 14px;
-  font-weight: 500; }
+  font-weight: 400; }
 
 #sidebar .viagg_container h3,
 #sidebar .spec_container h3,
