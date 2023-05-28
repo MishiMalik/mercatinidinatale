@@ -1680,6 +1680,18 @@ a.gflag {
   .side-card:hover {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
 
+.social-row {
+  padding-top: 4px;
+  width: 100%;
+  background-color: #d8444b; }
+  .social-row a {
+    padding: 0px !important;
+    margin: 0px !important; }
+    .social-row a i {
+      font-size: 20px;
+      color: white;
+      margin: 0px 15px 0px 0px; }
+
 .program-card {
   background-color: #f1f1f1 !important;
   padding: 15px;
