@@ -2316,6 +2316,7 @@ blockquote p {
     right: 0;
     height: 100%;
     width: 100%;
+    object-fit: cover;
     z-index: -1; }
   @media only screen and (max-width: 1200px) {
     .banner-viagii {
