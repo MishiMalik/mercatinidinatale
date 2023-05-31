@@ -153,7 +153,9 @@
 .blob-green {
     animation: pulse-black-2 2s infinite;
 }
-
+.blob-scale{
+    animation: pulse-black-3 2s infinite;
+}
 @keyframes pulse-black {
     0% {
         transform: scale(0.95);
@@ -188,6 +190,22 @@
     }
 }
 
+@keyframes pulse-black-3 {
+    0% {
+        transform: scale(0.95);
+        border: 1px solid transparent;
+    }
+
+    70% {
+        transform: scale(1);
+        border: 1px solid $primary;
+    }
+
+    100% {
+        transform: scale(0.95);
+        vborder: 1px solid transparent;
+    }
+}
 // ==============================================italy trips cards
 .trips_data {
     background-color: white;

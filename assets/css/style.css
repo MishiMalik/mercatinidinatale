@@ -937,6 +937,9 @@ a.gflag {
 .blob-green {
   animation: pulse-black-2 2s infinite; }
 
+.blob-scale {
+  animation: pulse-black-3 2s infinite; }
+
 @keyframes pulse-black {
   0% {
     transform: scale(0.95);
@@ -958,6 +961,17 @@ a.gflag {
   100% {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 #70CC61; } }
+
+@keyframes pulse-black-3 {
+  0% {
+    transform: scale(0.95);
+    border: 1px solid transparent; }
+  70% {
+    transform: scale(1);
+    border: 1px solid #e60a2e; }
+  100% {
+    transform: scale(0.95);
+    vborder: 1px solid transparent; } }
 
 .trips_data {
   background-color: white;
