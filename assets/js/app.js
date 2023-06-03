@@ -223,3 +223,5 @@ $('.owl-carousel-trips').owlCarousel({
 
 //   chart.draw(data, google.charts.Bar.convertOptions(options));
 // }
+
+
